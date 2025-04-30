@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piensalo porfi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f0d9c5;
+            color: #5e4c5a;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #fcd5ce;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            font-size: 1rem;
+            color: #5e4c5a;
+        }
+        
+        .navigation {
+            background-color: #f9dcc4;
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .navigation a {
+            text-decoration: none;
+            color: #5e4c5a;
+            background-color: #ffb5a7;
+            padding: 10px 15px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+        }
+        
+        .navigation a:hover {
+            background-color: #f8edeb;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-section {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+        
+        .card {
+            background-color: #c1caacc2;
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            text-align: center;
+        }
+        
+        .card-header {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            color: #5e4c5a;
+        }
+        
+        .card-content {
+            display: none;
+            padding: 15px;
+            background-color: #fcd5ce;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+        
+        .card-content p {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        
+        .savings-counter {
+            background-color: #f8edeb;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .counter-value {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #5e4c5a;
+            justify-content: center;
+        }
+        
+        .counter-controls {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        button {
+            background-color: #ffb5a7;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            color: #5e4c5a;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            background-color: #fec89a;
+            transform: translateY(-2px);
+        }
+        
+        input {
+            padding: 8px;
+            border: 1px solid #fcd5ce;
+            border-radius: 5px;
+            text-align: center;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            padding: 20px 0;
+            color: #5e4c5a;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado con mensaje corto -->
+        <header>
+            <h1>Se lo que acordamos y lo voy a respetar ahahah de verdad
+                , peroooo esto tecnicamente no cuenta como hablarte y no
+                creo que te pueda fastidiar muuchoo con esto. 
+                Uhmm hay una cartita breve abajo, si no la quieres leer esta super
+                je, pero queria decirte como me siento cuando la quieras leer. Porfa piensalo :), tqm
+            </h1>
+        </header>
+        
+        <!-- Navegación con 8 enlaces -->
+        <nav class="navigation">
+            <button class="nav-button" onclick="window.open('https://www.fincaraiz.com.co/apartamento-en-arriendo/192202180', '_blank')">1</button>
+            <button class="nav-button" onclick="window.open('https://www.fincaraiz.com.co/apartamento-en-arriendo/191466138', '_blank')">2</button>
+            <button class="nav-button" onclick="window.open('https://www.fincaraiz.com.co/apartamento-en-arriendo/10168358', '_blank')">3</button>
+            <button class="nav-button" onclick="window.open('https://www.metrocuadrado.com/inmueble/arriendo-apartamento-bogota-ub.-class-2-habitaciones-1-banos/10202-M5589385', '_blank')">4</button>
+            <button class="nav-button" onclick="window.open('https://www.fincaraiz.com.co/apartamento-en-arriendo/192010538', '_blank')">5</button>
+            <button class="nav-button" onclick="window.open('https://www.fincaraiz.com.co/apartamento-en-arriendo/192208514', '_blank')">6</button>
+            <button class="nav-button" onclick="window.open('https://www.fincaraiz.com.co/apartamento-en-arriendo/192126732', '_blank')">7</button>
+            <button class="nav-button" onclick="window.open('https://www.fincaraiz.com.co/apartamento-en-arriendo/192057087', '_blank')">8</button>
+            <button class="nav-button" onclick="window.open('https://www.fincaraiz.com.co/apartamento-en-arriendo/192114535', '_blank')">9</button>
+            <button class="nav-button" onclick="window.open('https://www.ciencuadras.com/inmueble/apartamento-en-arriendo-en-los-pantanos-bogota-2943304', '_blank')">10</button>
+        </nav>
+        
+        <!-- Sección de la carta -->
+        <section class="card-section">
+            <div class="card" id="my-card">
+                <h2 class="card-header">Cartita</h2>
+                <p>Dale clic :)</p>
+                
+                <div class="card-content" id="card-content">
+                    <p>holap,</p>
+                    <p>voy a ser breve y lo menos cursi o linda posible eee. Quiero pedir disculpas en verdad por hacerte sentir mal, no era mi intención en lo mas minimo pero no puedo hacer nada mas que disculparme y prometer que si algo me vuelve a molestar o hacer sentir mal te lo dire tan pronto lo sienta y de mejor manera y claramente no ser tan volatil e impulsiva. fin. no tengo excusas, solo lo siento.</p>
+                    <p>Ahora olvidemos eso por un momento eee, no quiero forzar nada, solo que es algo que quiero mucho genuinamente. De manera tal vez egoista por quererte aqui? ehm sip. Porque quiero hacer las cosas bien contigo y me sigo rehusando a no estar en tu vida? seeeep ahahahaha. Sea cual sea la razon aja, me gusaria que lo pensaras capaz. Así sea con nicole o con una roomie rara o en soacha y tenga que ir hasta alla a verte, pero me gustaria que lo pensaras.
+                        Solo puedo decirte que si vinieras serias mi prioridad, lo sabes. Te visitaria tanto como pueda, y sip diciendole a mis papas ahahah asi pase lo que pase. creo que eso es un error horrible que hice cuando si estabas y no quiero mas eso. así sea de amigas no quiero nada oculto, te quiero a ti.
+                    </p>
+                    <p>Ahora otro tema ahahah, entiendo si no quieres ni lo anterior ni esto, solo no quiero arrepentirme de proponerlo o decirlo. Quisiera que vinieras eeeee ahahahah mientras eso no genere problemas de cualquier tipo ni nada por el estilo. Esto propbablemente te moleste? ahaah o no te guste, pero yo llevo ahorrando eeee y es para verte.
+                        Y creo que es mas facil vernos aca que yo vaya a verte alla hahaha no solo por temas de permisos o yo que se sino aja entiendo es más complicado que te vea alla. asi que la solucion es incomodarte a ti ahhaah eeeee. yo quiero pagar ambos pasajes y si dios es grande y me saco plata del culo y aja yo vere ela, la estadia tambien eeeee.
+                        Y aja obviamente quiero invitarte a comer o aja algunos dias. y antes que vayas a decirme o pensarlo, no, no me los quiero gastar en cosas normales de universitarios ahaha, los he ahorrado meramente pensando en verte
+                        asi que aja. abajito aparece maso lo que llevo ahorrado y constantemente lo voy a actualizar ahahha cada vez que me entren 500 pesos. En fin, se que algunos aptos estan medio curiosos? ahahhaha pero aja quiero que sea más en forma de si lo piensas que tu mires mas porque eres mas lista que
+                        yo con eso ahahaha.
+                    </p>
+                    <p>sea cualquiera la decision que elijas o como sea, mucha suerte. me puedes hablar en cualquier momento que estes estresada o las cosas no esten muy bien. yo siempre estoy.</p>
+                    
+                    <!-- Contador de ahorros -->
+                    <div class="savings-counter">
+                        <h3>Mis ahorros para ti </h3>
+                        <p class="counter-value">$<span id="counter">120.000</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <p>Hecho en noche de crisis eee, disculpa que este tan fea la pagina ahahah</p>
+        </footer>
+    </div>
+
+    <script>
+        // Funcionalidad para desplegar la carta
+        const card = document.getElementById('my-card');
+        const cardContent = document.getElementById('card-content');
+        
+        card.addEventListener('click', function(e) {
+            // Evitar que los clics en el contenido desplegado o en los botones cierren la carta
+            if (e.target.tagName === 'BUTTON' || e.target.tagName === 'INPUT' ||
+                (e.target.closest('.card-content') && e.target !== cardContent)) {
+                return;
+            }
+            
+            // Alternar la visibilidad del contenido
+            if (cardContent.style.display === 'block') {
+                cardContent.style.display = 'none';
+            } else {
+                cardContent.style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
